@@ -1,0 +1,13 @@
+name: "Auto label"
+description: "Automatically label issues and pull requests based on title and body"
+author: "peanut-lover"
+inputs:
+  GH_TOKEN:
+    description: GitHub token used to make API requests
+    required: true
+branding:
+  icon: "activity"
+  color: "purple"
+runs:
+  using: "node16"
+  main: "./index.js"
