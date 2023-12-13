@@ -8,7 +8,7 @@ if (!githubToken) {
 }
 
 const octokit = github.getOctokit(githubToken);
-console.log($`Octokit object created ${JSON.stringify(octokit)}`);
+console.log(`Octokit object created ${JSON.stringify(octokit)}`);
 
 // TODO: Getting input of Git Action
 
