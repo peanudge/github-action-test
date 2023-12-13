@@ -1,14 +1,13 @@
-import * as core from "@actions/core";
-import * as github from "@actions/github";
+import { initialize } from "./initialize";
+import { getPRList } from "./api";
 
 // Step1: Get Octokit object;
-const githubToken = core.getInput("GH_TOKEN", { required: true });
-if (!githubToken) {
-  throw new Error("Missing GH_TOKEN environment variable");
-}
+initialize();
 
-const octokit = github.getOctokit(githubToken);
-console.log(`Octokit object created ${JSON.stringify(octokit)}`);
+// Step2. Get PRs
+getPRList().then((prs) => {
+  console.log(prs);
+});
 
 // TODO: Getting input of Git Action
 
