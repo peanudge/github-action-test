@@ -1,1 +1,3 @@
-123213
+# How to create git action
+
+1. npm init

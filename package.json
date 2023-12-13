@@ -1,0 +1,23 @@
+{
+  "name": "gitaction-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peanut-lover/github-action-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peanut-lover/github-action-test/issues"
+  },
+  "homepage": "https://github.com/peanut-lover/github-action-test#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  }
+}
