@@ -9,7 +9,7 @@ export const initialize = () => {
   if (!githubToken) {
     throw new Error("Missing GH_TOKEN environment variable");
   }
-  const octokit = github.getOctokit(token);
+  const octokit = github.getOctokit(githubToken);
 
   global.octokit = octokit;
 };
