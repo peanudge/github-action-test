@@ -7,7 +7,7 @@ if (!githubToken) {
   throw new Error("Missing GH_TOKEN environment variable");
 }
 
-const octokit = github.getOctokit(token);
+const octokit = github.getOctokit(githubToken);
 console.log($`Octokit object created ${JSON.stringify(octokit)}`);
 
 // TODO: Getting input of Git Action
