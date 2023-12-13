@@ -1,3 +1,5 @@
+const MAX_PER_PAGE = 100;
+
 const fetchAllPages = async (
   request,
   params,
