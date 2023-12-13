@@ -12,4 +12,8 @@ export const initialize = () => {
   const octokit = github.getOctokit(githubToken);
 
   global.octokit = octokit;
+
+  console.log(`Successfully initialized.`);
+  console.log(`global ower: ${JSON.stringify(global.owner)} `);
+  console.log(`global repo: ${JSON.stringify(global.repo)} `);
 };
