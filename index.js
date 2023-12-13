@@ -1,3 +1,4 @@
+import * as core from "@actions/core";
 import { initialize } from "./initialize.js";
 import { getPRList, addLabels, removeLabel } from "./api.js";
 
