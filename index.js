@@ -1,5 +1,5 @@
-import { initialize } from "./initialize";
-import { getPRList } from "./api";
+import { initialize } from "./initialize.js";
+import { getPRList } from "./api.js";
 
 // Step1: Get Octokit object;
 initialize();
